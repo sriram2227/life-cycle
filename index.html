@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vertical DevOps Lifecycle</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      padding: 20px;
+    }
+    .lifecycle {
+      max-width: 400px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .stage {
+      position: relative;
+      background: #fff;
+      border: 2px solid #3498db;
+      border-radius: 6px;
+      padding: 15px 20px;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 30px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .stage::after {
+      content: "";
+      position: absolute;
+      bottom: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+      border: solid transparent;
+      border-top-color: #3498db;
+      border-width: 10px;
+    }
+    .stage:last-child {
+      margin-bottom: 0;
+    }
+    .stage:last-child::after {
+      content: none;
+    }
+    .stage h3 {
+      margin: 0;
+      color: #3498db;
+      font-size: 1.1rem;
+    }
+  </style>
+</head>
+<body>
+  <h1 style="text-align:center;">DevOps Lifecycle</h1>
+  <div class="lifecycle">
+    <div class="stage">
+      <h3>Continuous Development</h3>
+    </div>
+    <div class="stage">
+      <h3>Continuous Integration</h3>
+    </div>
+    <div class="stage">
+      <h3>Continuous Testing</h3>
+    </div>
+    <div class="stage">
+      <h3>Continuous Deployment / Delivery</h3>
+    </div>
+    <div class="stage">
+      <h3>Continuous Monitoring</h3>
+    </div>
+    <div class="stage">
+      <h3>Continuous Feedback</h3>
+    </div>
+    <div class="stage">
+      <h3>Continuous Operations</h3>
+    </div>
+  </div>
+</body>
+</html>
